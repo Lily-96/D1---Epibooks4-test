@@ -5,6 +5,7 @@ import { Card } from "react-bootstrap";
 const SingleBook = ({ book, selectedBook, changeSelectedBook }) => {
   return (
     <Card
+      data-testid="single-book-card"
       onClick={() => changeSelectedBook(book.asin)}
       style={{
         border: selectedBook === book.asin ? "3px solid red" : "none",
